@@ -1,0 +1,150 @@
+# author: Kyle
+
+Background {
+	color 0.5 0.5 0.5
+	ambientLight 1 1 1 
+}
+
+Camera {
+	eye 0 0 0
+	lookAt 1 0 0
+	up 0 0 1
+	fovy 45
+}
+Lights {
+    	Light {
+		position 0 0 0
+		color 0.5 0.5 0.5
+	}
+}
+
+Materials {
+	Material {
+		textureFilename ../Project_3/Media/textures/soccer.png
+		diffuseColor 0.5 0.5 0.5
+		specularColor 0.5 0.5 0.5
+		reflectiveColor 0 0 0
+		shininess 50
+		transparentColor 0 0 0 
+		indexOfRefraction 0.6
+	}
+	Material {
+		textureFilename ../Project_3/Media/textures/grass.jpg
+		diffuseColor 0.5 0.5 0.5
+		specularColor 0.5 0.5 0.5
+		reflectiveColor 0.3 0.3 0.3
+		shininess 50
+		transparentColor 0 0 0 
+		indexOfRefraction 0.6
+	}
+	Material {
+		textureFilename ../Project_3/Media/textures/bu.jpg
+		diffuseColor 1 1 1
+		specularColor 1 1 1
+		reflectiveColor 0 0 0
+		shininess 50
+		transparentColor 0 0 0 
+		indexOfRefraction 0.6
+	}
+}
+
+Group {
+		
+	Triangle {
+		vertex0 20 -15 -15
+		vertex1 20 15 -15
+		vertex2 20 -15 15
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 1
+	}
+	Triangle {
+		vertex0 20 15 15
+		vertex1 20 -15 15
+		vertex2 20 15 -15
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 1
+	}
+	Sphere {
+		materialIndex 0
+		center 15 -7 0
+		radius 1.2
+	}
+	Triangle {
+		vertex0 15 7 -4
+		vertex1 15 10 -4
+		vertex2 15 7 4
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 2
+	}
+	Triangle {
+		vertex0 15 10 4
+		vertex1 15 7 4
+		vertex2 15 10 -4
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 2
+	}
+	Triangle {
+		vertex0 15 7 4
+		vertex1 20 7 4
+		vertex2 15 10 4
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 2
+	}
+	Triangle {
+		vertex0 20 10 4
+		vertex1 15 10 4
+		vertex2 20 7 4
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 2
+	}
+	Triangle {
+		vertex0 15 7 -4
+		vertex1 20 7 -4
+		vertex2 15 10 -4
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 2
+	}
+	Triangle {
+		vertex0 20 10 -4
+		vertex1 15 10 -4
+		vertex2 20 7 -4
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 2
+	}
+	Triangle {
+		vertex0 15 10 -4
+		vertex1 20 10 -4
+		vertex2 15 10 4
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 2
+	}
+	Triangle {
+		vertex0 20 10 4
+		vertex1 15 10 4
+		vertex2 20 10 -4
+		tex_xy_0 1 0
+		tex_xy_1 0 0
+		tex_xy_2 0 1
+		materialIndex 2
+	}
+	
+	
+}
